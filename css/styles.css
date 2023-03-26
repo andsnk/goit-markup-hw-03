@@ -71,6 +71,9 @@ body {
   padding-right: 156px;
   margin-left: auto;
   margin-right: auto;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: var(--accent);
 }
 
 .logo {
@@ -136,7 +139,14 @@ body {
 /** ------- FOOTER------- **/
 
 .footer {
+  display: flex;
+  margin-top: 120px;
+  min-height: 312px;
   background-color: var(--hero-background);
+}
+
+.footer-wraper {
+  padding: 100px 0 0 156px;
 }
 
 .part-footer-logo {
@@ -144,6 +154,8 @@ body {
 }
 
 .footer-text {
+  max-width: 264px;
+  padding-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -157,9 +169,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
-  
 
   /* padding: 188px 0;
   max-width: 496px; */
@@ -217,20 +226,24 @@ body {
 
 .advantages-list {
   display: flex;
-  gap: 24;
+  gap: 24px;
+  justify-content: center;
 }
 
 .advantages-subtitle {
+  padding-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
+
 .advantages-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 
 /** ------- WORK------- **/
@@ -246,6 +259,7 @@ body {
 .work-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .work-title {
@@ -268,6 +282,7 @@ body {
 .team-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .team-item {
@@ -290,6 +305,7 @@ body {
 }
 
 .team-subtitle {
+  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -298,11 +314,21 @@ body {
   color: var(--dark);
 }
 .team-text {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
 }
+
+/* .team-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+} */
 
 /*? PAGE 2 ?*/
 /** ------- PORTFOLIO------- **/
@@ -331,6 +357,14 @@ body {
   color: var(--white-background);
 }
 
+.main-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
@@ -338,7 +372,26 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark);
 }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  border: 1px solid var(--accent);
+  width: 360px;
+  height: 420px;
+}
+
+.portfolio-title {
+  padding: 32px 0 8px 16px;
+}
+
 .portfolio-text {
+  padding-left: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
