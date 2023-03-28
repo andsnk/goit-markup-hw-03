@@ -29,10 +29,16 @@ body {
   background-color: var(--white-background);
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list {
@@ -70,11 +76,6 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
-  padding-left: 156px;
-  padding-right: 156px;
-  margin-left: auto;
-  margin-right: auto;
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: var(--accent);
@@ -122,12 +123,12 @@ body {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-address-list {
   display: flex;
   gap: 40px;
-  margin-left: 332px;
 }
 
 .header-address-link {
@@ -146,7 +147,7 @@ body {
 
 .footer {
   padding-top: 100px;
-  min-height: 312px;
+  padding-bottom: 100px;
   background-color: var(--hero-background);
 }
 
@@ -156,7 +157,7 @@ body {
 
 .footer-text {
   max-width: 264px;
-  padding-top: 16px;
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -228,6 +229,10 @@ body {
   justify-content: center;
 }
 
+.advantages-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .advantages-subtitle {
   margin-bottom: 8px;
   font-weight: 500;
@@ -241,20 +246,23 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  /* max-width: 264px; */
 }
 
 /** ------- WORK------- **/
 
-.work .container {
+.work {
   padding-bottom: 120px;
 }
-
 
 .work-list {
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+
+.work-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .work-title {
@@ -272,7 +280,7 @@ body {
 .team {
   background-color: var(--light);
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 72px;
 }
 
 .team-list {
@@ -286,8 +294,12 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-background);
-  min-width: 264px;
-  min-height: 380px;
+  width: calc((100% - 72px) / 4);
+}
+
+.team-card-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-title {
@@ -301,7 +313,6 @@ body {
 }
 
 .team-subtitle {
-  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -319,6 +330,11 @@ body {
 
 /*? PAGE 2 ?*/
 /** ------- PORTFOLIO------- **/
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .main-btn {
   display: flex;
@@ -343,13 +359,13 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--white-background);
+  border-color: var(--pressed-state);
 }
 
 .main-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 
@@ -366,11 +382,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 48px 24px;
-  margin-bottom: 120px;
 }
 
 .portfolio-item {
- 
   width: 360px;
   height: 420px;
 }
@@ -379,15 +393,14 @@ body {
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: var(--accent);
+  padding: 32px 0 32px 16px;
 }
 
 .portfolio-title {
-  padding: 32px 0 8px 16px;
+margin-bottom: 8px;
 }
 
 .portfolio-text {
-  padding-left: 16px;
-  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
