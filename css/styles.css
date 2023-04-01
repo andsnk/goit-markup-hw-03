@@ -33,6 +33,12 @@ img {
   display: block;
 }
 
+header {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: var(--accent);
+}
+
 .container {
   max-width: 1158px;
   margin-left: auto;
@@ -76,9 +82,7 @@ img {
   display: flex;
   align-items: center;
   width: 100%;
-  border-style: solid;
-  border-width: 0 0 1px 0;
-  border-color: var(--accent);
+  
 }
 
 .logo {
@@ -104,16 +108,18 @@ img {
   align-items: flex-start;
   gap: 40px;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
 }
 
 .header-link {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-link:hover,
@@ -303,7 +309,7 @@ img {
 }
 
 .team-title {
-  margin-bottom: 120px;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
